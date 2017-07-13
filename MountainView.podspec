@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source_files = "MountainView/**/*.{h,swift}"
   s.requires_arc = true
   s.frameworks   = "UIKit"
-  s.dependency   = "Mountain"
+  s.dependency "Mountain"
 end
