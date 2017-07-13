@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ONP-wJ-IbH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MountainViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="v3h-rw-0zk">
+                                <rect key="frame" x="38" y="64" width="299" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haF-t6-mgz">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
+                                        <state key="normal" title="Push"/>
+                                        <connections>
+                                            <action selector="push" destination="BYZ-38-t0r" eventType="touchUpInside" id="lum-Zq-Eqd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWy-On-vN6">
+                                        <rect key="frame" x="39" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Pop"/>
+                                        <connections>
+                                            <action selector="pop" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuk-1B-vDv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWU-CS-ZOY">
+                                        <rect key="frame" x="73" y="0.0" width="53" height="30"/>
+                                        <state key="normal" title="Present"/>
+                                        <connections>
+                                            <action selector="present" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZw-tE-0Pi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcO-Me-asE">
+                                        <rect key="frame" x="130" y="0.0" width="54" height="30"/>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <action selector="dismiss" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y0l-bb-sEd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp8-WY-193">
+                                        <rect key="frame" x="188" y="0.0" width="43" height="30"/>
+                                        <state key="normal" title="Linear"/>
+                                        <connections>
+                                            <action selector="curveLinear" destination="BYZ-38-t0r" eventType="touchUpInside" id="89X-Ky-05E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-1V-Bxu">
+                                        <rect key="frame" x="235" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="In"/>
+                                        <connections>
+                                            <action selector="curveEaseIn" destination="BYZ-38-t0r" eventType="touchUpInside" id="q67-hB-nW9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-JC-Av9">
+                                        <rect key="frame" x="269" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Out"/>
+                                        <connections>
+                                            <action selector="curveEaseOut" destination="BYZ-38-t0r" eventType="touchUpInside" id="FyQ-eK-7BX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v3h-rw-0zk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PJG-Qa-XAW"/>
+                            <constraint firstItem="v3h-rw-0zk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sjz-DK-iI4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ADH-wR-tm0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="200"/>
+        </scene>
+        <!--Mountain View Controller-->
+        <scene sceneID="D9q-FQ-vdb">
+            <objects>
+                <viewController storyboardIdentifier="MountainViewController" id="aP3-XU-7cl" customClass="MountainViewController" customModule="MountainViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="orB-eA-UXy"/>
+                        <viewControllerLayoutGuide type="bottom" id="IlL-nu-ZpG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5O3-BL-zrf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiL-TQ-Hk5" customClass="MountainView" customModule="MountainView">
+                                <rect key="frame" x="87.5" y="120" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="KDY-A6-R1L"/>
+                                    <constraint firstAttribute="width" constant="200" id="P7C-PR-Pkp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eiL-TQ-Hk5" firstAttribute="centerX" secondItem="5O3-BL-zrf" secondAttribute="centerX" id="FNY-CU-vgL"/>
+                            <constraint firstItem="eiL-TQ-Hk5" firstAttribute="top" secondItem="orB-eA-UXy" secondAttribute="bottom" constant="100" id="xtM-OZ-PFf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mountainView" destination="eiL-TQ-Hk5" id="JA7-7o-EIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hjb-eA-DE1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="200"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f0h-VW-oT4">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" id="ONP-wJ-IbH" customClass="NavigationController" customModule="MountainViewExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KvU-q6-Ipl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ScD-K1-Pe8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n26-cq-I7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-357" y="201"/>
+        </scene>
+    </scenes>
+</document>
