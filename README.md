@@ -7,7 +7,7 @@
 
 The animation curve looks like Mountain View.
 
-#### [Appetize's Demo](https://appetize.io/embed/4gktrxnmf67ahr6tkpeut4kqvc)
+#### [Appetize's Demo](https://appetize.io/app/4gktrxnmf67ahr6tkpeut4kqvc)
 
 ## Over View
 
@@ -67,8 +67,6 @@ UIView.animate(withDuration: 0.3) {
 }
 ```
 
-Also, MountainView depends on Mountain.
-
 ## Requirements
 
 - Swift 3.0
@@ -76,9 +74,17 @@ Also, MountainView depends on Mountain.
 
 ## How to Install
 
+MountainView depends on Mountain.
+
 #### CocoaPods
 
 Add the following to your `Podfile`:
+
+```Ruby
+pod "Mountain"
+```
+
+or
 
 ```Ruby
 pod "MountainView"
