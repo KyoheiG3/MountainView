@@ -23,8 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         mountainWindow.isUserInteractionEnabled = false
         mountainWindow.rootViewController = MountainViewController.makeFromStoryboard()
-        mountainWindow.makeKeyAndVisible()
-        
+
+        DispatchQueue.main.async {
+            self.mountainWindow.makeKeyAndVisible()
+        }
+
         return true
     }
 
