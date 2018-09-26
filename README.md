@@ -1,4 +1,5 @@
-![Logo](https://github.com/KyoheiG3/assets/blob/master/MountainView/logo.png)
+![logo](https://user-images.githubusercontent.com/5707132/46053616-9256c400-c17e-11e8-955b-8b06d387302b.png)
+
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/MountainView.svg?style=flat)](http://cocoadocs.org/docsets/MountainView)
@@ -13,7 +14,7 @@ The animation curve looks like Mountain View.
 
 It consists of Mountain for visualizing animation and MountainView for graphing it.
 
-![Graph](https://github.com/KyoheiG3/assets/blob/master/MountainView/graph.png)
+![graph](https://user-images.githubusercontent.com/5707132/46053575-6a676080-c17e-11e8-8c1c-73688d5fd6e8.png)
 
 #### Mountain
 
@@ -247,7 +248,7 @@ UIView.animate(withDuration: 0.3) {
 }
 ```
 
-<img alt="timetable" src="https://github.com/KyoheiG3/assets/blob/master/MountainView/screen.png" width="320">
+<img width="322" alt="screen" src="https://user-images.githubusercontent.com/5707132/46053627-a0a4e000-c17e-11e8-86e3-1d3bf84df6fd.png">
 
 ## LICENSE
 
