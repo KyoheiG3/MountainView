@@ -117,7 +117,7 @@
 					C7BB125F1DF57D8600228A8D = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = MX36A76L68;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -287,7 +287,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -307,7 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyoheiito.Mountain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

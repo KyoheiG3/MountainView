@@ -191,7 +191,7 @@ extension MountainLayer {
                     anim.repeatDuration = action.repeatDuration
                     anim.autoreverses = action.autoreverses
                     anim.fillMode = action.fillMode
-                    anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+                    anim.timingFunction = CAMediaTimingFunction(name: .linear)
                     
                     animationDelegate = action.delegate
                     anim.delegate = self

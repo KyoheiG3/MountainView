@@ -10,9 +10,7 @@ import UIKit
 
 private extension NSObjectProtocol {
     static var className: String {
-        let className = NSStringFromClass(self)
-        let range = className.range(of: ".")
-        return className.substring(from: range!.upperBound)
+        return String(describing: self)
     }
 }
 

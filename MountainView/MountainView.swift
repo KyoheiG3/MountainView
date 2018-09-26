@@ -19,7 +19,7 @@ public class MountainView: UIView, MountainLayerHaving, MountainLayerDelegate {
     }
 
     var viewColor: UIColor = .black
-    var curveLineCap: String {
+    var curveLineCap: CAShapeLayerLineCap {
         get { return curveView.lineCap }
         set { curveView.lineCap = newValue }
     }

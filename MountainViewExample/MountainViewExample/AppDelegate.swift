@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         (mountainWindow.rootViewController as? MountainViewController)?.mountainView?.climb()
     }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         mountainWindow.isUserInteractionEnabled = false
         mountainWindow.rootViewController = MountainViewController.makeFromStoryboard()

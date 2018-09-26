@@ -8,7 +8,7 @@
 
 extension UIView {
     @discardableResult
-    open class func animate(withDuration duration: TimeInterval, delay: TimeInterval = 0, options: UIViewAnimationOptions = [], retain: Bool = true, animations: @escaping () -> Void = {}, situation: @escaping (ClimbingSituation) -> Void, completion: ((Bool) -> Void)? = nil) -> ClimbDownable? {
+    open class func animate(withDuration duration: TimeInterval, delay: TimeInterval = 0, options: UIView.AnimationOptions = [], retain: Bool = true, animations: @escaping () -> Void = {}, situation: @escaping (ClimbingSituation) -> Void, completion: ((Bool) -> Void)? = nil) -> ClimbDownable? {
         let mountain = Mountain()
         
         UIView.animate(withDuration: duration, delay: delay, options: options, animations: {
@@ -20,7 +20,7 @@ extension UIView {
     }
     
     @discardableResult
-    open class func animate(withDuration duration: TimeInterval, delay: TimeInterval = 0, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat, options: UIViewAnimationOptions = [], retain: Bool = true, animations: @escaping () -> Void = {}, situation: @escaping (ClimbingSituation) -> Void, completion: ((Bool) -> Void)? = nil) -> ClimbDownable? {
+    open class func animate(withDuration duration: TimeInterval, delay: TimeInterval = 0, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat, options: UIView.AnimationOptions = [], retain: Bool = true, animations: @escaping () -> Void = {}, situation: @escaping (ClimbingSituation) -> Void, completion: ((Bool) -> Void)? = nil) -> ClimbDownable? {
         let mountain = Mountain()
         
         UIView.animate(withDuration: duration, delay: delay, usingSpringWithDamping: dampingRatio, initialSpringVelocity: velocity, options: options, animations: {

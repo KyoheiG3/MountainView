@@ -32,7 +32,7 @@ class GridView: UIView {
         }
         
         let mask = CAShapeLayer()
-        mask.fillRule = kCAFillRuleEvenOdd
+        mask.fillRule = .evenOdd
         mask.path = path.cgPath
         layer.mask = mask
     }

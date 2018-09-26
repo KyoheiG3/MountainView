@@ -19,7 +19,7 @@ class CurveView: UIView {
     
     var lineColor = UIColor.black.withAlphaComponent(0.5)
     var lineWidth: CGFloat = 2
-    var lineCap = kCALineCapRound
+    var lineCap = CAShapeLayerLineCap.round
     
     private var lastPoint: CGPoint?
     private let curvePath = UIBezierPath()
